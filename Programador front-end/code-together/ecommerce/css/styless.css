@@ -1,0 +1,252 @@
+/* SELECTOR UNIVERSAL Y DE TIPO */
+* {
+    font-family: "Oswald", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------- */
+/* SELECTORES SIMPLES: TIPO Y CLASE */
+/* ---------------------------------------------------- */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(108, 78%, 30%);
+    /* Verde Primario */
+    color: white;
+    padding: 25px;
+    margin-bottom: 5%;
+}
+
+header img {
+    border-radius: 50px;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    background-color: #f0fff0;
+    /* Base muy clara */
+    color: #1a1919;
+}
+
+/* ---------------------------------------------------- */
+/* SELECTORES DE INTERACCIÓN (PSEUDOCLASES) Y ATRIBUTO */
+/* ---------------------------------------------------- */
+
+/* Combinador descendente: Estilo de los enlaces de navegación */
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+/* Pseudoclase de Interacción: :hover en los enlaces de navegación */
+header nav a:hover {
+    color: #FF6B00;
+    /* Naranja Cítrico (Acento) */
+    text-decoration: underline;
+}
+
+/* Pseudoclase de Interacción: :active en el botón principal */
+.cta-button:active {
+    opacity: 0.8;
+}
+
+/* Pseudoclase de Interacción: :visited en todos los enlaces */
+a:visited {
+    color: #c0c0c0;
+    /* Gris muy claro para indicar que ya fue visitado */
+}
+
+.welcome {
+    margin-bottom: 5%;
+}
+
+/* ---------------------------------------------------- */
+/* ESTILIZACIÓN DE E-COMMERCE Y LISTAS */
+/* ---------------------------------------------------- */
+
+main {
+    padding-bottom: 70px;
+    /* Deja espacio para el footer fijo */
+}
+
+.main-products {
+    margin-bottom: 5%;
+}
+
+.main-products ul {
+    list-style: none;
+    margin: 1% 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Combinador descendente: Afecta a todos los li DENTRO de main-products ul */
+.main-products ul li {
+    display: inline-block;
+    width: 280px;
+    /* Ancho fijo para mejorar la cuadrícula */
+    margin: 15px 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Pseudoclase de Interacción: :hover en las tarjetas de producto */
+.main-products ul li:hover {
+    transform: translateY(-5px);
+    /* Pequeño efecto de elevación */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-products img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor li */
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Combinador descendente: Estilo del precio */
+.main-products ul li span b {
+    color: #194B73;
+    /* Azul Profundo para los precios */
+    font-size: 1.3em;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------------- */
+/* PSEUDOCLASES DE POSICIÓN/ESTRUCTURA (Productos Destacados) */
+/* ---------------------------------------------------- */
+
+/* Pseudoclase Estructural: Primer elemento de la lista */
+.main-products ul li:first-child {
+    border-left: 5px solid #00A86B;
+    /* Destaca el primer producto */
+}
+
+/* Pseudoclase Estructural: Último elemento de la lista */
+.main-products ul li:last-child {
+    border-bottom: 5px solid #FF6B00;
+    /* Destaca el último producto */
+}
+
+/* Pseudoclase Estructural: Elemento 'nth-child(even)' */
+/* Aplicamos un fondo ligeramente diferente a los productos pares */
+.main-products ul li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* ---------------------------------------------------- */
+/* SECCIÓN HERO Y BOTONES */
+/* ---------------------------------------------------- */
+
+.hero {
+    padding: 50px 20px;
+    background-color: #e6f7e6;
+    /* Verde muy claro */
+    margin-bottom: 5%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #00A86B;
+    /* Usamos el color verde más atractivo */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF6B00;
+    /* Naranja Cítrico (Acento) */
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+
+/* ---------------------------------------------------- */
+/* ESTILIZACIÓN DE CARRITO (Usando Flexbox para posicionamiento) */
+/* ---------------------------------------------------- */
+
+.cart article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #194B73;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.cart article h3 {
+    flex-grow: 1;
+    /* Permite que el nombre ocupe la mayor parte del espacio */
+    text-align: left;
+    margin: 0;
+}
+
+/* Selector de atributo: Estiliza el elemento 'a' cuyo atributo href es una cadena vacía (o contiene el valor de atributo) */
+.cart article a[href=""] {
+    margin-left: 15px;
+}
+
+.btn-delete {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
+    /* Rojo más oscuro en hover */
+    color: white;
+}
+
+/* ---------------------------------------------------- */
+/* SECCIÓN FOOTER */
+/* ---------------------------------------------------- */
+
+footer {
+    background-color: hsl(108, 78%, 30%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    /* Posicionamiento absoluto */
+    width: 100%;
+    bottom: 0;
+}

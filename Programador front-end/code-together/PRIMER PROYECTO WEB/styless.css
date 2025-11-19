@@ -1,0 +1,127 @@
+/* ===== Base + sticky footer ===== */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #d6cdcd;
+    min-height: 100vh;
+}
+
+body img {
+    max-width: 100%;
+    height: auto;
+}
+
+#main-superior {
+    background-color: #884444;
+    text-align: center;
+    color: rgb(241, 235, 235);
+}
+
+#main-superior img {
+    width: auto;
+    height: 1050px;
+}
+
+#content-main {
+    display: flex;
+    padding: 15px;
+}
+
+/* ===== Header ===== */
+#main-header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+}
+
+/* ===== Nav (funciona con <a> directo o con <ul>) ===== */
+#main-nav,
+#main-nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color .3s;
+}
+
+#menu-utilidades {
+    padding: 15px;
+}
+
+/* ===== Logo ===== */
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#ia-maligna {
+    width: 500px;
+    height: auto;
+}
+
+#titulo-ia-maligna {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* ===== Main layout ===== */
+#main-section {
+    display: flex;
+    flex-direction: column;
+    color: rgb(83, 23, 23)
+}
+
+/* ===== Destacados del menú ===== */
+.span-inicio,
+.span-ia,
+.span-contact,
+.span-blog {
+    color: red;
+    font-weight: bold;
+}
+
+/* ===== Tabla ===== */
+#tabla-ejemplos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabla-ejemplos th,
+#tabla-ejemplos td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}

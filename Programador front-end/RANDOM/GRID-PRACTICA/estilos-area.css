@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main  {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+#container-main {
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 7fr 1fr 1fr;
+    grid-template-areas:
+        "tools tools tools"
+        "fast information information"
+        "principal principal principal"
+        "footer footer footer";
+}
+
+.menu-tools {
+    grid-area: tools;
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.menu-information {
+    grid-area: information;
+    background-color: lightgreen;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.menu-fast {
+    grid-area: fast;
+    background-color: lightcoral;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.menu-content {
+    grid-area: principal;
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.menu-contact {
+    grid-area: footer;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
