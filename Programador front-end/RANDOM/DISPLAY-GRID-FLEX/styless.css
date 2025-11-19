@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-flex {
+    background-color: rgb(200, 200, 200);
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+}
+
+.container-flex article {
+    background-color: rgb(156, 171, 185);
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px;
+    flex-basis: 33%;
+    height: 50px;
+}

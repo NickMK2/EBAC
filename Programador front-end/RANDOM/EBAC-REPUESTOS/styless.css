@@ -1,0 +1,186 @@
+/* EBAC-REPUESTOS/styless.css (Versión más corta) */
+
+/* ESTILOS BASE */
+
+html {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'BBH Sans Bartle', sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(177, 90, 24);
+    text-align: center;
+}
+
+/* HEADER Y NAVEGACIÓN */
+#notification-header {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(149, 178, 204);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 235, 235);
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+/* Combinación de estilos para la lista de navegación */
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-right: 20px;
+    margin: 0;
+}
+
+/* Eliminar subrayado de los enlaces del header */
+header ul a {
+    text-decoration: none;
+    color: rgb(18, 18, 164);
+}
+
+header li {
+    margin: 0 10px;
+}
+
+header a:hover {
+    color: rgb(14, 61, 102);
+    text-decoration: underline;
+}
+
+#brands ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-bottom: 5%;
+    padding-left: 0%;
+}
+
+#brands img {
+    width: 150px;
+    height: 150px;
+}
+
+#banner {
+    background-image: url('./assets/Banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding: 100px;
+    margin-bottom: 5%;
+    color: white;
+}
+
+/* PRODUCTOS DESTACADOS */
+.three-products {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.three-products article {
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+}
+
+.three-products img {
+    width: 30%;
+    height: 30%;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: rgb(177, 90, 24);
+    border-radius: 15px;
+    color: white;
+    inset: 0;
+}
+
+.articles-group {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+/* STORE */
+
+
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.all-products img {
+    display: grid;
+    width: 30%;
+    height: 30%;
+}
+
+.left-menu-all-products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 10px;
+}
+
+.left-menu-all-products a {
+    text-decoration: none;
+    color: rgb(18, 18, 164);
+}
+
+.menu-all-products {
+    margin-bottom: 5%;
+    gap: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 235, 235);
+    margin-top: 5%;
+    padding: 2%;
+}
